@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+background-image:url("http://groupsbay.com/images/background_login.jpg");
+
+}
+header{
+
+  color: yellow;
+  font-family: sans-serif;
+  text-align: center;
+}
+.abc{
+
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  float:left;
+  padding: 5px;
+  clear: both;
+  margin: 5px;
+  width: 500px;
+  height: 400px;
+}
+
+
+@media screen and (max-width: 640px) {
+
+  input[type=text] {
+    display: block;
+    position: relative;
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+  input[type=password] {
+    display: block;
+    position: relative;
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+  input [type=submit]
+   {
+    display: block;
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+<header>
+  <img src="http://www.freeiconspng.com/uploads/login-system-icon-13.png"alt="image"style="float:left"width="150px"height="150px">
+  <h1>Tutorials4u</h1>
+</header>
+<div class="abc">
+  <h3><strong>Login:</strong></h3>
+  <form action="">
+    <b>Username:</b>
+    <input type="text" name="usrid">
+    <br>
+    <b>Password:</b>
+    <input type="password" name="psd">
+    <br>
+    <a href="file:///home/verify.html" target="_blank"><small>Forgot password?</small></a>
+  <br><br>
+  <input type="submit" value="Sign in">
+</form>
+</div>
+</body>
+</html>
