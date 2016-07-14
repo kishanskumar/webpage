@@ -1,0 +1,48 @@
+body{
+background-image:url("http://viking-travel.ro/wp-content/uploads/2014/02/elegant-abstract-blue-backgrounds-ppt2.jpg");
+}
+header{
+  color: blue;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+}
+#err_us,#err_pd,#err_usr,#err_psd,#err_em{
+  color:red;
+  font-size: 10px
+  font-weight: bolder;
+}
+input[type=text][type=password]{
+  border-radius: 15px;
+
+}
+input[type=submit]:hover{
+  background-color: orange;
+}
+.abc{
+  text-align: center;
+  color: white;
+  border-radius: 15px;
+  border-width: thick;
+  border-style: double;
+border-color: green;
+  float:left;
+  padding: 5px;
+  margin: 20px;
+  width: 500px;
+  height: 500px;
+  background-image: url("http://wallpapershidef.com/wp-content/gallery/background-images-for-websites/websiteBackground.jpg");
+
+}
+@media only screen and (max-width:750px ){
+  .abc{
+    margin-left: 35%;
+    border-radius: 15px;
+    width: 50%;
+    height: 50%;
+  }
+  input {
+    width:50%;
+  }
+}
