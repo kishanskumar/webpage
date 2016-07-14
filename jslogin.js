@@ -50,7 +50,8 @@ function validate_form() {
 }
 localStorage.setItem(keyvalue, JSON.stringify(account));
   alert("Signup success.Login to continue");
-  return true;
+window.location = "test.html";
+  return false;
 
 }
 

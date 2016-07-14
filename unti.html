@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<title>
+  Login Page
+</title>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main">
+  <h2>Please Log in below</h2>
+  <div class="insidemain">
+    <form action="file:///home/blesson/Documents/loginpage/logindisplay.html">
+      <div class="imgcontainer">
+      </div>
+      <div class="imgcontainer">
+      </div>
+
+      <div class="container">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <br></br>
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <br></br>
+        <button type="submit">Login</button>
+      </div>
+
+      <div class="container">
+        <div class="psw">(Forgot your <a href="#">username</a>/<a href="#">password</a>?)</div>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
+form {
+    border: 1px #f1f1f1;
+}
+body {
+  text-align: center;
+  background-image: url("bkg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: fixed;
+}
+h2 {
+  margin-top: 150px;
+  margin-left: -200px;
+}
+.insidemain {
+  text-align: center;
+  margin-top: 50px;
+}
+.imgcontainer {
+    text-align:justify;
+}
+.container  b {
+  font-weight: normal;
+  font-size: 100%;
+  width: 100px;
+  padding: 10px 0 0 10px;
+}
+
+input[type=password] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 0px -10px -20px 110px;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+input[type=text] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 0px -10px -20px 105px;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: violet;
+    color: black;
+    padding: 14px 20px;
+    margin: 2px 200px 50px;
+    margin-left: 410px;
+    border: none;
+    cursor: pointer;
+    width: 24.8%;
+    border-radius: 6px;
+}
+
+
+
+.container .psw {
+    margin-top: -40px;
+    padding: 0 0 0 230px;
+    padding-top: -30px;
+}
+
+@media screen and (max-width: 840px) {
+  .container {
+    display: block;
+  }
+  .container b {
+  }
+  input[type=text] {
+    display: block;
+    position: relative;
+    margin-left: 350px;
+    margin-top: 10px;
+  }
+  input[type=password] {
+    display: block;
+    position: relative;
+    margin-left: 350px;
+    margin-top: 10px;
+  }
+  button {
+    display: block;
+    margin-left: 350px;
+    margin-top: 10px;
+  }
+}
