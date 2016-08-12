@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+
+
+<style>
+body{
+background-image:url("http://reboundingjobs.com/jobs/wp-content/uploads/2012/12/blue-line-background-1920x1080.jpg");
+}
+header{
+  color: yellow;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.abc{
+
+  text-align: center;
+  color: white;
+  border-color: green;
+  border-radius: 25px;
+  border-width: thick;
+  border-style: groove;
+  float:left;
+  padding: 2px;
+  margin: 10px;
+  width: 400px;
+  height: 400px;
+  margin-right: 20px;
+}
+</style>
+</head>
+
+<body>
+<header>
+  <img src="http://www.freeiconspng.com/uploads/login-system-icon-13.png"alt="image"style="float:left"width="150px"height="150px">
+  <h1>Tutorials4u</h1>
+</header>
+<div class="abc">
+  <h3><strong>Already a member?Login</strong></h3>
+  <form name="loginform" action="file:///home/kishan/Desktop/sample/home.html" onsubmit="return logval()" method="post">
+    <b>Username:</b><br>
+    <input type="text" name="usid" required>
+    <br>
+    <b>Password:</b><br>
+    <input type="password" name="pd" required>
+    <br>
+    <a href="file:///home/verify.html" target="_blank"><small>Forgot password?</small></a>
+  <br><br>
+  <input type="submit" value="Sign in">
+</form>
+</div>
+
+<div class="abc">
+  <h3><strong>New Member?Signup:</strong></h3>
+  <form name="newform" action="" onsubmit="return validateform()" method="post">
+    <b>First name:</b><br>
+    <input type="text" name="fname" required>
+    <br>
+    <b>Last name:</b><br>
+    <input type="text" name="lname" required>
+    <br>
+    <b>Username:</b><br>
+    <input type="text" name=usrid required>
+    <br>
+    <b>Email id:</b><br>
+    <input type="text" name="email" required>
+    <br>
+    <b>Password:</b><br>
+    <input type="password" name="psd" required>
+    <br>
+    <br>
+    <input type="submit" value="Sign up">
+  </form>
+</div>
+
+<script>
+function validateform() {
+  var pwd = document.forms["newform"]["psd"].value ;
+  var mail = document.forms["newform"]["email"].value;
+  var fn = document.forms["newform"]["fname"].value;
+  var ln = document.forms["newform"]["lname"].value;
+  var usr = document.forms["newform"]["usrid"].value;
+  var atpos=mail.indexOf("@");
+  var dotpos=mail.lastIndexOf(".");
+  if (pwd.length < 6) {
+    alert("Password too short.");
+    return false;
+  }
+  else if (atpos<1 || dotpos<atpos+2 || dotpos+2>=mail.length){
+  alert("Please enter a valid e-mail address");
+  return false;
+}
+
+  var i=localStorage.length.toString();
+  var keyvalue = "userid"+i;
+
+  var account = new Array;
+  account.push(fn);
+  account.push(ln);
+  account.push(usr);
+  account.push(pwd);
+  account.push(mail);
+for (var i = 0; i < localStorage.length; i++) {
+  var check = localStorage.getItem("userid"+i);
+  var details= JSON.parse(check);
+  if(usr == details[2])
+  {
+    alert("User ID already exists");
+    return false;
+  }
+}
+  localStorage.setItem(keyvalue, JSON.stringify(account));
+  alert("Signup success.Login to continue");
+  return true;
+}
+
+function logval() {
+  var userid = document.forms["loginform"]["usid"].value;
+  var pass = document.forms["loginform"]["pd"].value;
+  var accdet = localStorage.getItem(userid);
+
+
+   account = JSON.parse(accdet);
+  if(pass == account[3])
+  {
+    alert("login successfull");
+    return true;
+  }
+  else{
+    alert("invalid entry");
+    return false;
+
+  }
+}
+</script>
+
+</body>
+</html>

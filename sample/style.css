@@ -1,0 +1,118 @@
+body{
+background-image:url("http://viking-travel.ro/wp-content/uploads/2014/02/elegant-abstract-blue-backgrounds-ppt2.jpg");
+
+background-size:cover;;
+}
+header{
+  color: blue;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+}
+#err_us,#err_pd,#err_usr,#err_psd,#err_em{
+  color:red;
+  font-size: 15px;
+  font-family: serif;
+  font-weight: bolder;
+}
+.abc a#sign{
+  border-radius: 10px;
+  font-size: 15px;
+  font-family:cursive;;
+  -webkit-border-radius:4px;
+  height: 60px;
+  padding:15px;
+  background-color:#CCCCCC;
+  color: green;
+  font-weight: bolder;
+  border: 1px solid black;
+}
+.abc a#sign:hover{
+  background-color: orange;
+  color: blue;
+}
+input[type=text][type=password]{
+  border-radius: 15px;
+
+}
+input[type=submit]:hover{
+  background-color: orange;
+}
+.abc{
+  text-align: center;
+  color: white;
+  border-radius: 15px;
+  border-width: thick;
+  border-style: double;
+border-color: green;
+
+  padding: 15px;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  background-image: url("http://wallpapershidef.com/wp-content/gallery/background-images-for-websites/websiteBackground.jpg");
+  opacity: 1;
+
+
+}
+
+.def{
+  text-align:left;
+  color: white;
+  border-radius: 15px;
+  border-width: thick;
+  border-style: double;
+border-color: green;
+  padding: 15px;
+  margin: auto;
+  width: 600px;
+  height:auto;;
+  background-image: url("http://wallpapershidef.com/wp-content/gallery/background-images-for-websites/websiteBackground.jpg");
+  background-size:cover;
+}
+.def input{
+text-align: center;
+float: right;
+
+}
+.def a#log{
+  border-radius: 10px;
+  font-size: 15px;
+  font-family:cursive;;
+  -webkit-border-radius:4px;
+  height: 60px;
+  padding:15px;
+  background-color:#CCCCCC;
+  color: green;
+  font-weight: bolder;
+  border: 1px solid black;
+}
+.def a#log:hover{
+  background-color: orange;
+  color: blue;
+}
+
+
+@media only screen and (max-width:750px ){
+  .abc {
+    margin-left: 35%;
+    border-radius: 15px;
+    width: 50%;
+    height: 25%;
+  }
+  input {
+    width:50%;
+  }
+}
+@media only screen and (max-width:750px ){
+  .def {
+    margin-left: 35%;
+    border-radius: 15px;
+    width: 50%;
+    height: auto;
+  }
+  input {
+    width:40%;
+  }
+}

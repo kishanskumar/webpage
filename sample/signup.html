@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <link rel="icon"
+        type="image/png"
+        href="/sample/favicon.png-size-i9.png" sizes="32x32">
+<title>Login</title>
+<script type="text/javascript" src="sample.json"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/sample/style.css">
+</head>
+
+<body>
+<header>
+  <img src="http://www.freeiconspng.com/uploads/login-system-icon-13.png"alt="image"style="float:left;"width="150px"height="150px">
+  <h1>Tutorials4u</h1>
+</header>
+<!--
+<div class="abc">
+  <h3><strong>Already a member?<br>Login</strong></h3>
+  <form name="loginform" action="/sample/home.html" onsubmit="return logval()" method="post">
+    <b>Username:</b><br>
+    <input type="text" name="usid" required>
+    <br>
+    <div id="err_us"> </div>
+    <b>Password:</b><br>
+    <input type="password" name="pd" required>
+    <br>
+    <div id="err_pd"></div>
+    <a href="/verify.html" target="_blank"><small>Forgot password?</small></a>
+  <br><br>
+  <input type="submit" value="Sign in">
+</form>
+</div>
+-->
+<div class="def">
+  <h3><strong>New Member?Signup:</strong></h3>
+  <form name="newform" action="" onsubmit="return validate_form()" method="post">
+    <b>First name:</b>
+    <input type="text" name="fname" required>
+    <br><br>
+    <b>Last name:</b>
+    <input type="text" name="lname" required>
+    <br><br>
+    <b>Username:</b>
+    <input type="text" name="usrid" required>
+    <br><br>
+    <div id="err_usr"></div>
+    <b>Age:</b>
+    <input type="number" id="age" name="dage"  required>
+    <br><br>
+    <div id="err_age"></div>
+    <b>Gender:</b>
+    <select name="dgender" id="gender" style="float:right;">
+      <option value="male">MALE</option>
+      <option value="female">FEMALE</option>
+      <option value="others">Others</option>
+    </select>
+    <br><br>
+    <b>Address:</b>
+    <input type="text" name="daddline1" id="addline1"required>
+    <br><br>
+    <input type="text" name="daddline2" id="addline2" required>
+    <br><br>
+    <input type="text" name="daddline3" id="addline3" required>
+    <br><br>
+    <b>Nationality:</b>
+    <select name="dnation" id="nation" style="float:right;">
+  <option value="India">India</option>
+  <option value="Australia">Australia</option>
+  <option value="US">US</option>
+  <option value="SA">South Africa</option>
+</select>
+
+    <br><br>
+    <b>Educational Details:</b><br>
+    <b>10th:</b>
+    <input type="text" name="dtenth" id="tenth" required>
+    <br><br>
+    <b>Plus Two:</b>
+    <input type="text" name="dplus_two" id="plus_two" required>
+    <br><br>
+    <b>Degree:</b>
+    <input type="text" name="ddegree" id="degree" required>
+    <br><br>
+    <b>Performance:(Out of 10)</b></br>
+    <b>Year 2010:</b>
+    <input type="number" name="dy10" id="y10"required>
+    <br><br>
+    <b>Year 2011:</b>
+    <input type="number" name="dy11" id="y11"required>
+    <br><br>
+    <b>Year 2012:</b>
+    <input type="number" name="dy12" id="y12"required>
+    <br><br>
+    <b>Year 2013:</b>
+    <input type="number" name="dy13" id="y13"required>
+    <br><br><b>Year 2014:</b>
+    <input type="number" name="dy14" id="y14"required>
+    <br><br><b>Year 2015:</b>
+    <input type="number" name="dy15" id="y15"required>
+    <br><br>
+    <b>Year 2016:</b>
+    <input type="number" name="dy16" id="y16"required>
+    <br><br>
+    <b>Email id:</b>
+    <input type="text" name="demail" id="email"required>
+    <br><br>
+    <div id="err_em"></div>
+    <b>
+    <b>Password:</b>
+    <input type="password" name="psd" required>
+    <br><br>
+    <b>Retype the password:<b>
+    <input type="Password" name="psd1" required>
+    <br>
+    <div id="err_psd"></div>
+    <br><br>
+    <input type="submit" value="Sign up"><br>
+    <a id="log" href="/sample/login.html">Login</a><br>
+  </form>
+</div>
+
+<script src="/sample/jslogin.js"></script>
+
+</body>
+</html>

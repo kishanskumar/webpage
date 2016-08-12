@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <link rel="icon"
+        type="image/png"
+        href="/sample/favicon.png-size-i9.png" sizes="32x32">
+<title>Login</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/sample/style.css">
+</head>
+
+<body>
+<header>
+  <img src="http://www.freeiconspng.com/uploads/login-system-icon-13.png"alt="image"style="float:left;"width="150px"height="150px">
+  <h1>Tutorials4u</h1>
+</header>
+<div class="abc">
+  <h3><strong>Already a member?<br>Login</strong></h3>
+  <form name="loginform" action="/sample/home.html" onsubmit="return log_val()" method="post">
+    <b>Username:</b><br>
+    <input type="text" name="dusid" id="user_id" required>
+    <br>
+    <div id="err_us"> </div>
+    <b>Password:</b><br>
+    <input type="password" name="dpd" id="user_pd" required>
+    <br>
+    <div id="err_pd"></div>
+    <a href="/verify.html" target="_blank"><small>Forgot password?</small></a>
+  <br><br>
+  <input type="submit" value="Sign in"><br><br><br>
+  <a id="sign" href="/sample/signup.html">Not a member?Signup.</a><br>
+</form>
+</div>
+<!--
+<div class="abc">
+  <h3><strong>New Member?Signup:</strong></h3>
+  <form name="newform" action="" onsubmit="return validate_form()" method="post">
+    <b>First name:</b><br>
+    <input type="text" name="fname" required>
+    <br>
+    <b>Last name:</b><br>
+    <input type="text" name="lname" required>
+    <br>
+    <b>Username:</b><br>
+    <input type="text" name=usrid required>
+    <br>
+    <div id="err_usr"></div>
+    <b>Email id:</b><br>
+    <input type="text" name="email" required>
+    <br>
+    <div id="err_em"></div>
+    <b>Password:</b><br>
+    <input type="password" name="psd" required>
+    <br>
+    <b>Retype the password:<b>
+    <br><input type="Password" name="psd1" required>
+    <br>
+    <div id="err_psd"></div>
+    <br>
+    <input type="submit" value="Sign up">
+  </form>
+</div>
+-->
+<script src="/sample/jslogin.js"></script>
+
+</body>
+</html>
