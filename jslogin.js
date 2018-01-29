@@ -67,7 +67,8 @@ function logval() {
   if(userid == usdetails[2] && pass == usdetails[3])
   {
     alert("Login Success");
-    return true;
+    window.location = "home.html";
+    return false;
   }
   else if (userid == usdetails[2] && pass != usdetails[3]) {
     document.getElementById("err_pd").style.display="block";
